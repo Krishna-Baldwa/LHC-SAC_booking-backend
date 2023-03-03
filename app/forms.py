@@ -4,4 +4,4 @@ from .models import FormRequest
 class FormRequestForm(forms.ModelForm):
     class Meta:
         model =FormRequest
-        fields = ['name', 'email', 'message']
+        fields = ['contact','reason','council','starttime','endtime','room']
