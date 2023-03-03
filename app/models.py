@@ -4,7 +4,11 @@ from django.db import models
 # from django.db import models
 
 class FormRequest(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    message = models.TextField()
-    approved = models.BooleanField(default=False)
+    contact = models.CharField(max_length=20)
+    reason = models.CharField(max_length=200)
+    council = models.CharField(max_length=200)
+    starttime = models.DateTimeField()
+    endtime = models.DateTimeField()
+    room = models.CharField(max_length=200)
+  
+`
